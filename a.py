@@ -1,29 +1,9 @@
-def create_signature(name, message):
-    signature = f'''
-░█████╗░██╗░░██╗░██████╗████████╗██╗░░██╗░█████╗░██████╗░██╗░░░░░███████╗██████╗░
-██╔══██╗██║░░██║██╔════╝╚══██╔══╝██║░░██║██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗
-███████║███████║╚█████╗░░░░██║░░░███████║██║░░██║██████╔╝██║░░░░░█████╗░░██████╔╝
-██╔══██║██╔══██║░╚═══██╗░░░██║░░░██╔══██║██║░░██║██╔═══╝░██║░░░░░██╔══╝░░██╔══██╗
-██║░░██║██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝██║░░░░░███████╗███████╗██║░░██║
-╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚══════╝╚══════╝╚═╝░░╚═╝
-
-{name}
-Söz: '{message}'
-    '''
-    return signature
-
-name = "Ali Usanoğlu"
-message = "Unutma, veriye sahip olan sana ve her şeye sahip olmuş olur!"
-
-signature = create_signature(name, message)
-print(signature)
-
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 # Spotify API kimlik bilgileri
-client_id = '13a3b968e77c4aa6944673a0da972f6d'
-client_secret = '7f7590bdd5b54a5e99ebcf7650953185'
+client_id = '*'
+client_secret = '*'
 redirect_uri = 'http://localhost:8080/callback'
 scope = 'user-modify-playback-state user-library-modify user-read-currently-playing playlist-modify-public playlist-read-private user-top-read user-read-recently-played'
 
